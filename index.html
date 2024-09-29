@@ -10,25 +10,25 @@
 </head>
 <body class="bg-white text-gray-800">
      <header id="header">
-        <div class="navbar justify-between ">
-            <div class="flex-none mx-3 ">
+        <div class="navbar justify-between space-x-2 ">
+            <div class="flex-none mx-3 mr-2 max-sm:m-0">
               <button class="btn btn-square btn-ghost">
-                <button class="btn btn-success">Blog</button>
+                <a class="btn btn-success" href="./index2.html">Blog</a>
               </button>
             </div>
-            <div class="">
-              <a class=" text-xl flex flex-row items-center font-bold">
-                <img src="./assets/logo.png" alt="logo" class="mr-3 size-10">
+            <div class="text-center">
+              <a class="ml-5 text-xl flex flex-row items-center font-bold">
+                <img src="./assets/logo.png" alt="logo" class=" size-10 max-sm:size-8">
                 Donate Bangladesh</a>
             </div>
-            <div class="flex-none mx-5">
+            <div class="flex-none mx-5 max-sm:mx-2">
               <img class="mr-2 " src="./assets/coin.png" alt="coin">
               <h4 id="myamount" class="text-xl font-semibold">40000 BDT</h4>
             </div>
           </div>
           <div id= "bannerBtn" class="p-4 mt-5 space-x-3 text-center ">
-            <button class="btn btn-outline btn-success">Donation</button>
-            <button class="btn btn-outline ">History</button>
+            <button id="donation" class="btn btn-outline btn-success">Donation</button>
+            <button id="history" class="btn btn-outline ">History</button>
           </div>
      </header>
      <main id="content" class="container text-center ">
@@ -39,7 +39,7 @@
                   <img
                     src="./assets/noakhali.png"
                     class="max-w-sm rounded-md shadow-2xl w-full" />
-                  <div class="text-left flex flex-col w-2/5 space-y-2">
+                  <div class="text-left flex flex-col w-2/5 max-sm:w-full space-y-2">
                     
                     <div class=" bg-slate-100  px-4 py-2 w-1/5 rounded-md flex items-center">
                         <img class="size-5 mr-1" src="./assets/coin.png" alt="coin">
@@ -61,7 +61,7 @@
                   <img
                     src="./assets/feni.png"
                     class="max-w-sm rounded-md shadow-2xl w-full" />
-                  <div class="text-left flex flex-col w-2/5 space-y-2">
+                  <div class="text-left flex flex-col w-2/5 max-sm:w-full  space-y-2">
                     
                     <div class=" bg-slate-100  px-4 py-2 w-1/5 rounded-md flex items-center">
                         <img class="size-5 mr-1" src="./assets/coin.png" alt="coin">
@@ -82,7 +82,7 @@
                   <img
                     src="./assets/quota-protest.png"
                     class="max-w-sm rounded-md shadow-2xl w-full" />
-                  <div class="text-left flex flex-col w-2/5 space-y-2">
+                  <div class="text-left flex flex-col w-2/5  max-sm:w-full space-y-2">
                     
                     <div class=" bg-slate-100  px-4 py-2 w-1/5 rounded-md flex items-center">
                         <img class="size-5 mr-1" src="./assets/coin.png" alt="coin">
@@ -98,8 +98,13 @@
                 </div>
               </div>
         </div>
-     </main>
+        <div id="tranjection-history" class="hidden">
+           <h1 class="text-7xl font-extrabold">Transection History</h1>
+           <div id="transection-container" class="py-6 space-y-5">
 
+           </div>
+        </div>
+     </main>
     <script src="./js/utilities.js"></script>
     <script src="./js/script.js"></script>
 </body>

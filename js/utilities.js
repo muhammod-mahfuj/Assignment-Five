@@ -20,3 +20,11 @@
 
    return amountNum;
 }
+
+function showSection (id) {
+   document.getElementById('cards').classList.add('hidden');
+   document.getElementById('tranjection-history').classList.add('hidden');
+
+
+   document.getElementById(id).classList.remove('hidden');
+}
